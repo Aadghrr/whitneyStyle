@@ -1,7 +1,6 @@
-#define NULL  0
 #define M(x) malloc(sizeof(x))
 #define P(p) printf("%d ",p)
-typedef struct n {int v;struct n* l;struct n* r;} n;
-n* cN(int v){n* nn=M(n*);nn->v=v;nn->l=NULL;nn->r=NULL;return nn;}
-T(n* r){if(!r){return 0;}T(r->l);P(r->v);T(r->r);}
-main(){n* r=cN(10);r->l=cN(15);r->r=cN(20);T(r);return 0;}
+typedef struct nd {int v;struct nd* l;struct nd* r;} n;
+n* cN(int va){n* nn=M(n);nn->v=va;nn->l=0;nn->r=0;return nn;}
+T(n* rt){if(rt==0){return 0;}T(rt->l);P(rt->v);T(rt->r);}
+main(){n* rt=cN(10);rt->l=cN(15);rt->r=cN(20);T(rt);return 0;}

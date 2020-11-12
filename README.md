@@ -1,5 +1,7 @@
 d.c - Returns user input 3 times - 4 lines
+
 ll.c - Implementation of a linked list with an example - 5 lines
+
 t.c - Implements a tree, traversal, and example - 6 lines
 
 Note:
